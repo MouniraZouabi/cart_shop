@@ -1,0 +1,38 @@
+<html>
+
+
+<head><title>compteur</title></head>
+<body>
+<h3><center>JavaScript Click Counter</center></h3>
+<div>
+    <center><h3 id="counter-label">0</h3></center>
+</div>
+<center>
+    <div>
+        <button onclick="incrementClick()">+</button>
+        <button onclick="decrimentClick()">-</button>
+
+    </div>
+</center>
+
+<script>
+
+var compteur = 0;
+
+
+function incrementClick() {
+    updateDisplay(++compteur);
+}
+
+
+function decrimentClick() {
+    updateDisplay(--compteur);
+}
+
+function updateDisplay(val) {
+    document.getElementById("counter-label").innerHTML = val;
+}
+
+</script>
+</body>
+</html>
